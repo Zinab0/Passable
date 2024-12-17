@@ -55,13 +55,5 @@ Dashboard
 
 
 ------------------------------------------
-### Contributors
 
-Zinab Alsaggaf - [Zinab0](https://github.com/Zinab0)
-
-Reema Almalki - [ReemmaMalki](https://github.com/ReemmaMalki)
-
-Rawan Alghamdi - [RawanAlghamdii](https://github.com/RawanAlghamdii)
-
-------------------------------------------
 
