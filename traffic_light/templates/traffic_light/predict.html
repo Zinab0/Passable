@@ -1,0 +1,24 @@
+{% extends "traffic_light/base.html" %}
+{% block title %}
+Detect Incident
+{% endblock %}
+
+
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    <h2>Upload Image</h2>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <!-- <input type="file" name="image" accept="image/*">
+    <label for="choice_field">Select the type of incident:</label>
+    <div class="circle-container">
+        <input type="radio" name="choice_field" value="Accident">
+        <span class="circle">Accident</span>
+        <input type="radio" name="choice_field" value="Congestion">
+        <span class="circle">Congestion</span>
+    </div> -->
+    <button type="submit">Test</button>
+</form>
+{% endblock %}
+
+<!-- Your HTML Template -->

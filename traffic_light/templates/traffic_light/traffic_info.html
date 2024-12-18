@@ -1,0 +1,28 @@
+{% extends "traffic_light/base.html" %}
+
+
+{% block title %}
+Traffic Information
+{% endblock %}
+
+
+{% block content %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch('/traffic-info/json/')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('is_accident').innerText = data.is_accident;
+                document.getElementById('is_congestion').innerText = data.is_congestion;
+                document.getElementById('new_green_light_time').innerText = data.new_green_light_time;
+            })
+            .catch(error => console.error('Error fetching traffic information:', error));
+    });
+</script>
+<div>
+    <h1>Traffic Information</h1>
+    <p>Accident Status: <span id="is_accident">Loading...</span></p>
+    <p>Congestion Status: <span id="is_congestion">Loading...</span></p>
+    <p>New Green Light Time: <span id="new_green_light_time">Loading...</span></p>
+</div>
+{% endblock %}

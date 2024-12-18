@@ -1,0 +1,29 @@
+{% extends "traffic_light/base.html" %}
+
+{% block title %}
+Detection Result
+{% endblock %}
+
+{% block content %}
+<form action="">
+<div>
+    <!-- <h2>Test Result By YOLOv8</h2> -->
+
+    {% if selected_choice == "Accident" %}
+        <h4>Test result for accident detection by YOLOv8:</h4>
+        <h4>Accident occurred: {{ is_accident }}</h4>
+    {% else %}
+        <h4>Test result for congestion detection by YOLOv8:</h4>
+        <h4>Number of vehicles: {{ number_of_vehicles }} cars</h4>
+        <h4>Traffic density: {{ traffic_density }}</h4>
+    {% endif %}
+    
+{%load static%}
+<img src="{% static 'traffic_light/img/results0.jpg' %}" height="340px" alt="Test Image">
+
+   <br>
+   <br>
+    <button> <a href="{% url 'predict_incident' %}">Back to test</a> </button>
+</div>
+</form>
+{% endblock %}

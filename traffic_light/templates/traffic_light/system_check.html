@@ -1,0 +1,21 @@
+{% extends "traffic_light/base.html" %}
+
+
+{% block title %}
+System Checking
+{% endblock %}
+
+
+{% block content %}
+
+
+<form method="post" enctype="multipart/form-data">
+    <h2>System Checking</h2>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add</button>
+
+</form>
+
+
+{% endblock %}
