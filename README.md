@@ -2,18 +2,39 @@
 
 Passable is an intelligent traffic light system (ITLS) that uses real-time data collection and analysis, adaptive signal control, and vehicular communication to provide responsive actions for congestion and accidents. Salik dynamically adjusts traffic light timing using computer vision through Closed-circuit television (CCTV) cameras installed at intersections, and alerts drivers in case of congestion or accidents via wireless communication reducing wait times and enabling better driving decisions. The system includes incident detection using deep learning, green light calculation, wireless alerts, and a dashboard interface for monitoring the traffic flow by traffic department administrators.
 
+---
+
+## Implementation Overview
+
+The project is organized into three main modules:
+
+### 1. `AI Model`
+Responsible for detecting the number of vehicles and identifying accidents from images using YOLOv8 AI model.
+
+📁 **Folder:** `AI Model`
+
+--
+
+### 2. `Dashboard`
+A web-based interface for monitoring live traffic status, alerts, and incident detection results built using Django & PowerBI.
+
+📁 **Folder:** `traffic_light`
+
+--
+
+### 3. `Hardware Prototype`
+Simulates a physical traffic light intersection, including traffic signals and the alert communication system built using Arduino.
+
+📁 **Folder:** `Hardware`
 
 ------------------------------------------
-### Implementation Details
+## System Architecture
 
-This project can be broken down into 3 modules:
+![fremwork-min](https://github.com/user-attachments/assets/3b255073-e1a8-41d0-ae02-eaa0fd0c4b70)
 
-1. `AI Model` - This module is responsible for detecting the number of vehicles in the image received as input from the camera. More specifically, it will provide as output the number of vehicles and if there is an accident detected.
 
-2. `Dashboard` - Dashboard interface provides a comprehensive overview of the traffic condition status.
+---
 
-3. `Hardware Prototype` - A simulation of traffic light intersection to simulate traffic signals and the alert system.
-------------------------------------------
 ## Demo
 
 ### `AI Model`
@@ -38,8 +59,7 @@ This project can be broken down into 3 modules:
 
 
 ### `Hardware Prototype`
-
-<img width="428" alt="INTERSECTIONPROTOTYPE" src="https://github.com/user-attachments/assets/050b805a-74fb-40bb-847a-3f8b9a00a593" />
+<img width="664" alt="INTERSECTIONPROTOTYPE" src="https://github.com/user-attachments/assets/1b04553d-3ded-430e-9312-3af9e730cf6e" />
 
 
 ------------------------------------------
