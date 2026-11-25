@@ -2,6 +2,7 @@
 
 Passable is an intelligent traffic light system (ITLS) that uses real-time data collection and analysis, adaptive signal control, and vehicular communication to provide responsive actions for congestion and accidents. Salik dynamically adjusts traffic light timing using computer vision through Closed-circuit television (CCTV) cameras installed at intersections, and alerts drivers in case of congestion or accidents via wireless communication reducing wait times and enabling better driving decisions. The system includes incident detection using deep learning, green light calculation, wireless alerts, and a dashboard interface for monitoring the traffic flow by traffic department administrators.
 
+#### Read full paper: [Passable: An Intelligent Traffic Light System with Integrated Incident Detection and Vehicle Alerting](https://www.mdpi.com/1424-8220/25/18/5760)
 ---
 
 ## Implementation Overview
